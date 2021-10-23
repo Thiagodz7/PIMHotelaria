@@ -1,0 +1,60 @@
+﻿@page
+@model PIMHotelaria.Pages.Clientes.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Clientes[0].nome_Cliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Clientes[0].cpf)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Clientes[0].telefone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Clientes[0].apelido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Clientes[0].senha)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Clientes) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nome_Cliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cpf)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.telefone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.apelido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.senha)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

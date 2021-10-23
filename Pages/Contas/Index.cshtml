@@ -1,0 +1,66 @@
+﻿@page
+@model PIMHotelaria.Pages.Contas.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Contas[0].agencia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contas[0].titular)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contas[0].num_Conta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contas[0].tp_Cartão)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contas[0].num_Cartão)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contas[0].cvc)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Contas) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.agencia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.titular)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.num_Conta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tp_Cartão)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.num_Cartão)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cvc)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

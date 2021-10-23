@@ -1,0 +1,43 @@
+﻿@page
+@model PIMHotelaria.Pages.Reservas.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Reservas</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reservas.dt_Entrada)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reservas.dt_Entrada)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reservas.dt_Saida)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reservas.dt_Saida)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reservas.num_Pessoas)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reservas.num_Pessoas)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reservas.mtd_Acesso)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reservas.mtd_Acesso)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Reservas.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

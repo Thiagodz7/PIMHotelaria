@@ -1,0 +1,60 @@
+﻿@page
+@model PIMHotelaria.Pages.Contas.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Contas</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Contas.ID" />
+            <div class="form-group">
+                <label asp-for="Contas.agencia" class="control-label"></label>
+                <input asp-for="Contas.agencia" class="form-control" />
+                <span asp-validation-for="Contas.agencia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contas.titular" class="control-label"></label>
+                <input asp-for="Contas.titular" class="form-control" />
+                <span asp-validation-for="Contas.titular" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contas.num_Conta" class="control-label"></label>
+                <input asp-for="Contas.num_Conta" class="form-control" />
+                <span asp-validation-for="Contas.num_Conta" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contas.tp_Cartão" class="control-label"></label>
+                <input asp-for="Contas.tp_Cartão" class="form-control" />
+                <span asp-validation-for="Contas.tp_Cartão" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contas.num_Cartão" class="control-label"></label>
+                <input asp-for="Contas.num_Cartão" class="form-control" />
+                <span asp-validation-for="Contas.num_Cartão" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contas.cvc" class="control-label"></label>
+                <input asp-for="Contas.cvc" class="form-control" />
+                <span asp-validation-for="Contas.cvc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
