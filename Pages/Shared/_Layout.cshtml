@@ -20,33 +20,33 @@
 <body class="img-fluid" style="background-image: url('img/Sino.png'); background-repeat: no-repeat; background-position: center; background-size:cover">
 
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark fundoNavbar border-bottom box-shadow mb-3 fixed-top">
-        <div class="container">
+            <div class="container">
             <a class="navbar-brand" asp-area="" asp-page="/Index"><img class="img-fluid" src="~/img/IconeLogo.png" alt="PIMHOTELARIA" /></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
                         <a class="nav-link text-light" asp-area="" asp-page="/Index">Home</a>
-                    </li>
-                    <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
                         <a class="nav-link text-light" asp-area="" asp-page="Clientes/Index">Cadastrar-se</a>
-                    </li>
-                    <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
                         <a class="nav-link text-light" asp-area="" asp-page="Contas/Index">Conta</a>
-                    </li>
-                    <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
                         <a class="nav-link text-light" asp-area="" asp-page="Reservas/Index">Faça sua Reserva!</a>
-                    </li>
-                    <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
                         <a class="nav-link text-light" asp-area="" asp-page="/Privacy">Privacy</a>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
     <br />
     <br />
     <br />
@@ -55,6 +55,7 @@
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
+    </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
