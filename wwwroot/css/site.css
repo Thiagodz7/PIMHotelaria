@@ -1,6 +1,13 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+/*IMAGEM DE FUNDO _ ADD THIAGO*/
+#HomepageBody{
+    background-image:url("../img/SinoRedmen.png");
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
 a.navbar-brand {
   white-space: normal;
   text-align: center;

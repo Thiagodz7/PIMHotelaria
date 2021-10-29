@@ -16,7 +16,10 @@ namespace PIMHotelaria.Data
         {
         }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5a316e225dec6afeee766a1be7c9250a0f695d96
         public DbSet<PIMHotelaria.Pages.Clientes.Clientes> Clientes { get; set; }
 
         public DbSet<PIMHotelaria.Pages.Contas.Contas> Contas { get; set; }

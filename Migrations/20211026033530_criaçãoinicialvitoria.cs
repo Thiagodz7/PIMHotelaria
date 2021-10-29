@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace PIMHotelaria.Migrations
 {
-    public partial class CriaçãoInicial : Migration
+    public partial class criaçãoinicialvitoria : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

@@ -10,8 +10,8 @@ using PIMHotelaria.Data;
 namespace PIMHotelaria.Migrations
 {
     [DbContext(typeof(PIMHotelariaContext))]
-    [Migration("20211023013919_CriaçãoInicial")]
-    partial class CriaçãoInicial
+    [Migration("20211026033530_criaçãoinicialvitoria")]
+    partial class criaçãoinicialvitoria
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

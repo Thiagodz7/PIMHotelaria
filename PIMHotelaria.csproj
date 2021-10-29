@@ -5,6 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\img\LogoComNome.png" />
+    <None Include="wwwroot\img\LogoSemNome.png" />
+    <None Include="wwwroot\img\LogoTransparente.png" />
+    <None Include="wwwroot\img\Sino.jpeg" />
+    <None Include="wwwroot\img\Sino.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.11" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.11">
       <PrivateAssets>all</PrivateAssets>
