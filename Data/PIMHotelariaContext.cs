@@ -16,12 +16,6 @@ namespace PIMHotelaria.Data
         {
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(@"Data Source=LAPTOP-EFOV76KH;
-             Initial Catalog=BDPimHotelariat;Integrated Security=true");
-        }
-
         public DbSet<PIMHotelaria.Pages.Clientes.Clientes> Clientes { get; set; }
 
         public DbSet<PIMHotelaria.Pages.Contas.Contas> Contas { get; set; }
